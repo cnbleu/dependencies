@@ -74,7 +74,8 @@ ext {
     // widget dependencies
     widgetDependencies = [
             progresspieview: buildDependency("com.github.filippudak.progresspieview", "library", "1.0.+"),
-            wheelview      : buildDependency("com.wx.wheelview", "wheelview", "1.3.3")
+            wheelview      : buildDependency("com.wx.wheelview", "wheelview", "1.3.3"),
+            circleindicator: buildDependency("me.relex", "circleindicator", "1.2.1")
     ]
 }
 
