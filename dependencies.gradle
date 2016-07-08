@@ -3,7 +3,7 @@ ext {
     PROJECT_BUILD = [
             compileSdkVersion: 23,
             buildToolsVersion: '23.0.2',
-            minSdkVersion    : 9,
+            minSdkVersion    : 14,
             targetSdkVersion : 23
     ]
 
