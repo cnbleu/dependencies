@@ -7,6 +7,8 @@ ext {
             targetSdkVersion : 23
     ]
 
+    BUILD = PROJECT_BUILD
+
     // android support version
     supportVersion = '24.1.0'
 
@@ -46,6 +48,12 @@ ext {
             supportAnnotation: buildDependency(supportPackage, 'support-annotations', supportVersion),
             v13              : buildDependency(supportPackage, 'support-v13', supportVersion),
             multidex         : buildDependency(supportPackage, 'multidex', '1.0.0')
+    ]
+
+    // square dependencies
+    squareDependencies = [
+            leakcanary      : buildDependency('com.squareup.leakcanary', 'leakcanary-android', '1.4-beta2'),
+            leakcanary_no_op: buildDependency('com.squareup.leakcanary', 'leakcanary-android-no-op', '1.4-beta2')
     ]
 
     // want dependencies
