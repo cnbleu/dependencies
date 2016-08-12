@@ -52,7 +52,6 @@ ext {
 
     // http dependencies
     httpDependencies = [
-            http               : buildDependency(wantModelPackage, 'http', '2.0-SNAPSHOT@aar'),
             volley             : buildDependency('com.mcxiaoke.volley', 'library', '1.0.15'),
             okhttp             : buildDependency(okhttpPackage, 'okhttp', okhttpVersion),
             okhttpurlconnection: buildDependency(okhttpPackage, 'okhttp-urlconnection', okhttpVersion),
