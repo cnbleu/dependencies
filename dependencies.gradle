@@ -12,18 +12,12 @@ ext {
     // android support version
     supportVersion = '24.1.0'
 
-    // want project version
-    wantSdkVersion = '1.2.5-SNAPSHOT'
-    wantLogVersion = '1.2'
-
     // okhttp version
     okhttpVersion = '2.4.0'
 
     // packages
     supportPackage = 'com.android.support'
 
-    wantCorePackage = 'com.want.core'
-    wantModelPackage = 'com.want.model'
     okhttpPackage = 'com.squareup.okhttp'
 
     // support dependencies
@@ -54,14 +48,6 @@ ext {
     squareDependencies = [
             leakcanary      : buildDependency('com.squareup.leakcanary', 'leakcanary-android', '1.4-beta2'),
             leakcanary_no_op: buildDependency('com.squareup.leakcanary', 'leakcanary-android-no-op', '1.4-beta2')
-    ]
-
-    // want dependencies
-    wantDependencies = [
-            sdk        : buildDependency(wantCorePackage, 'sdk', wantSdkVersion),
-            log        : buildDependency(wantCorePackage, 'log', wantLogVersion),
-            ability    : buildDependency('com.want.ability', 'core', '1.1-SNAPSHOT@aar'),
-            imageloader: buildDependency(wantModelPackage, "imageloader", "2.0.4-SNAPSHOT@aar")
     ]
 
     // http dependencies
